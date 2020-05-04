@@ -25,6 +25,7 @@ def create_menu_item() :
 @menu_blueprint.route('/<int:menu_id>', methods=['GET', 'PUT', 'DELETE'])
 def search_menu_by_id(menu_id) :
     menu_item = Menu.query.filter_by(id=menu_id).first()
+    print(menu_item)
     if(menu_item == None):
         return '', 404
     if request.method == 'GET' :
@@ -33,9 +34,12 @@ def search_menu_by_id(menu_id) :
         menu_item.name = request.json['name']
         menu_item.price = request.json['price']
         menu_item.active = request.json['active']
+        db.session.commit()
+        return jsonify(res = ''), 204
     if request.method == 'DELETE' :
         db.session.delete(menu_item)
         db.session.commit()
+        return '', 204
 
 @menu_blueprint.route('/<string:menu_name>', methods=['GET'])
 def search_menu_by_name(menu_name) :

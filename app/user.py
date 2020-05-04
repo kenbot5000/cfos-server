@@ -42,4 +42,7 @@ def search_user_by_id(user_id) :
 @users_blueprint.route('/<string:username>', methods=['GET'])
 def get_user_by_name(username) :
     user = User.query.filter_by(username=username).first()
-    return jsonify(res = user.serialize)
+    if(user == None) :
+        return '', 404
+    else :
+        return jsonify(res = user.serialize)

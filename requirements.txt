@@ -1,8 +1,9 @@
 alembic==1.4.0
 autopep8==1.5
--e git+https://git.heroku.com/cafeteria-food-ordering-system.git@bf457a82a17fa5090e6c6df8869ffe02bd267cde#egg=cfos
+-e git+https://git.heroku.com/cafeteria-food-ordering-system.git@f68b74080cf46935a8c228b07b6b02a5b9dffd96#egg=cfos
 Click==7.0
 Flask==1.1.1
+Flask-Cors==3.0.8
 Flask-SQLAlchemy==2.4.1
 gunicorn==20.0.4
 itsdangerous==1.1.0
@@ -11,6 +12,7 @@ Mako==1.1.1
 MarkupSafe==1.1.1
 psycopg2==2.8.4
 pycodestyle==2.5.0
+PyJWT==1.7.1
 python-dateutil==2.8.1
 python-editor==1.0.4
 six==1.14.0
