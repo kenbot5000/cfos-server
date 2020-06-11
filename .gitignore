@@ -35,3 +35,8 @@ tests/temp_folder
 .mr.developer.cfg
 .project
 .pydevproject
+
+
+.vscode/
+
+/config.py
