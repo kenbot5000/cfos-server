@@ -36,7 +36,7 @@ tests/temp_folder
 .project
 .pydevproject
 
-/.vscode/
-/venv/
+.vscode
+venv
 
-/config.py
+config.py
