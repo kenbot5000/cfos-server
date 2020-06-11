@@ -1,6 +1,5 @@
 alembic==1.4.0
 autopep8==1.5
--e git+https://git.heroku.com/cfos-server.git@54afb28efafbe165bce9bc00939b582a67a45d19#egg=cfos
 Click==7.0
 Flask==1.1.1
 Flask-Cors==3.0.8
